@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFinder - Real Estate Listings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>HomeFinder</h1>
+        <p>Find your perfect home</p>
+    </header>
+
+    <main class="main-container">
+        <section class="filter-options">
+            <h2>Filter Properties</h2>
+            <form id="filterForm">
+                <div class="filter-group">
+                    <input type="text" id="location" placeholder="Location" class="filter-input" />
+                    <input type="number" id="minPrice" placeholder="Min Price" class="filter-input" />
+                    <input type="number" id="maxPrice" placeholder="Max Price" class="filter-input" />
+                    <button type="submit" class="btn apply-btn">Apply Filters</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="property-list">
+            <h2>Property Listings</h2>
+            <div id="propertyCards" class="property-cards">
+                <!-- Property cards will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 HomeFinder</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
